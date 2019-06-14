@@ -2,9 +2,10 @@
  Results of integration for following functions: 
  y = sin(x), y = e^x
  from 
- -5.00
+ -1.00
  to 
-  7.00
+  3.00
  Method used - trapezoidal rule integration
  
- Result of integration for function: sin(x):  -0.378575989523652     
+ Result of integration for function: sin(x):    1.49828002698379     
+ Result of integration for function: e^x:    20.1267405355118     

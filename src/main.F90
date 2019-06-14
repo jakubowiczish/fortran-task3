@@ -4,8 +4,8 @@ program main
 
     implicit none
 
-    real(kind = 8) :: ibeg = -5.0
-    real(kind = 8) :: iend = 7.0
+    real(kind = 8) :: ibeg = -1.0
+    real(kind = 8) :: iend = 3.0
 
     procedure(fun_int), pointer :: my_fun
 
@@ -16,6 +16,8 @@ program main
     integer(kind = 8) :: i
 
     real(kind = 8), codimension[*] :: sine_integration_result
+
+    real(kind = 8), codimension[*] :: exponent_integration_result
 
     real(kind = 8) :: single_length
 
@@ -54,6 +56,14 @@ program main
 
     syncall()
 
+    my_fun => exponent_fun
+
+    exponent_integration_result[this_image()] = &
+        trapezoid_integration(ibeg + ((this_image() - 1) * single_length), ibeg + (this_image()) * single_length, my_fun, p)
+
+    syncall()
+
+
     if (this_image() == 1) then
         result = 0.0
 
@@ -63,7 +73,16 @@ program main
 
         write(19, *) "Result of integration for function: sin(x): ", result
         write(*, *) "Result of integration for function: sin(x): ", result
-        
+
+        result = 0.0
+
+        do i = 1, num_images()
+            result = result + exponent_integration_result[i]
+        end do
+
+        write(19, *) "Result of integration for function: e^x: ", result
+        write(*, *) "Result of integration for function: e^x: ", result
+
     end if
 
 
