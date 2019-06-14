@@ -1,6 +1,6 @@
  
  Results of integration for following functions: 
- y = sin(x), y = e^x
+ y = sin(x), y = e^x, y = x**5 + 4 * x**4 + 6 * x**3 + 4 * x**2 + 9 * x + 1
  from 
  -1.00
  to 
@@ -9,3 +9,7 @@
  
  Result of integration for function: sin(x):    1.49828002698379     
  Result of integration for function: e^x:    20.1267405355118     
+ Result of integration for function: y = x**5 + 4 * x**4 + 6 * x**3 + 4 * x**2 +
+  9 * x + 1:    535.125000000000     
+ Result of integration for function: y = (x**3 - x**2) / (x - 20): 
+ -0.637918548248534     
