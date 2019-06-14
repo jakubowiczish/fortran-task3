@@ -41,5 +41,34 @@ For larger intervals there were huge gaps between real result and result calcula
 All results are available in ```integration_results.txt``` in ```res``` directory
 
 #### I used wolfram alpha in order to show you that the results are quite correct:
+1. Result for integrating ```y = sin(x)```
+- Using trapezoidal rule: 1.55694762674353 
+- Using rectangular rule: 1.54635237758489 
+- Using Wolfram Alpha: 
+
+![alt text](https://raw.githubusercontent.com/jakubowiczish/fortran-task3/master/res/sine_integration.png)
+
+2. Result for integrating ```y = e^x```
+- Using trapezoidal rule: 20.1267405355118 
+- Using rectangular rule: 19.5137530615636
+- Using Wolfram Alpha: 
+
+![alt text](https://raw.githubusercontent.com/jakubowiczish/fortran-task3/master/res/e_integration.png)
+
+3. Result for integrating ```y = x**5 + 4 * x**4 + 6 * x**3 + 4 * x**2 + 9 * x + 1```
+- Using trapezoidal rule: 535.125000000000 
+- Using rectangular rule: 503.265625000000 
+- Using Wolfram Alpha: 
+
+![alt text](https://raw.githubusercontent.com/jakubowiczish/fortran-task3/master/res/polynomial_integration.png)
+
+4. Result for integrating ```y = (x**3 - x**2) / (x - 20)```
+- Using trapezoidal rule: -0.637918548248534 
+- Using rectangular rule: -0.604718665448629 
+- Using Wolfram Alpha: 
+
+![alt text](https://raw.githubusercontent.com/jakubowiczish/fortran-task3/master/res/polynomial_quotient_integration.png)
+
+##### Results might differ from one another because of the method used and because of number of images
 
 
