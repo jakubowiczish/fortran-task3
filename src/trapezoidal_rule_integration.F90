@@ -3,8 +3,10 @@ module trapezoidal_rule_integration
 
     interface
         function integrate(ibeg, iend, my_fun, p) result (value)
-            implicit none
+            import :: fun_int
 
+            implicit none
+            
             ! beginning of integration interval
             real(kind = 8), intent(in) :: ibeg
 
