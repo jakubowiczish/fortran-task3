@@ -1,4 +1,5 @@
 module trapezoidal_rule_integration
+    use testing_functions
 
     interface
         function integrate(ibeg, iend, my_fun, p) result (value)
@@ -39,7 +40,7 @@ module trapezoidal_rule_integration
         real(kind = 8) :: value
 
         value = abs(iend - ibeg) * (my_fun(ibeg) + my_fun(iend)) / 2 
-        
+
     end function
 
 end module
