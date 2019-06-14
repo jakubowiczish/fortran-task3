@@ -9,8 +9,8 @@
   3.00
  Method used - TRAPEZOIDAL rule integration
  
- Result of integration for function: sin(x):    1.55694762674353     
- Result of integration for function: e^x:    20.1267405355118     
+ Result of integration for function: y = sin(x):    1.55694762674353     
+ Result of integration for function: y = e^x:    20.1267405355118     
  Result of integration for function: y = x**5 + 4 * x**4 + 6 * x**3 + 4 * x**2 +
   9 * x + 1:    535.125000000000     
  Result of integration for function: y = (x**3 - x**2) / (x - 20): 
@@ -18,8 +18,8 @@
  
  Method used - RECTANGULAR integration
  
- Result of integration for function: sin(x):    1.54635237758489     
- Result of integration for function: e^x:    19.5137530615636     
+ Result of integration for function: y = sin(x):    1.54635237758489     
+ Result of integration for function: y = e^x:    19.5137530615636     
  Result of integration for function: y = x**5 + 4 * x**4 + 6 * x**3 + 4 * x**2 +
   9 * x + 1:    503.265625000000     
  Result of integration for function: y = (x**3 - x**2) / (x - 20): 
