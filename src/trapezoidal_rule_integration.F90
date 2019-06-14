@@ -6,7 +6,7 @@ module trapezoidal_rule_integration
             import :: fun_int
 
             implicit none
-            
+
             ! beginning of integration interval
             real(kind = 8), intent(in) :: ibeg
 

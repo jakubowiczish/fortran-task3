@@ -16,7 +16,7 @@ module testing_functions
     contains 
 
 
-    function sine(x) result(y)
+    function sine_fun(x) result(y)
         implicit none
 
         real(kind = 8), intent(in) :: x
@@ -24,6 +24,17 @@ module testing_functions
         real(kind = 8) :: y
 
         y = sin(x)
-    end function sine
+    end function sine_fun
+
+
+    function exponent_fun(x) result(y)
+        implicit none
+
+        real(kind = 8), intent(in) :: x
+
+        real(kind = 8) :: y
+
+        y = exp(x)
+    end function exponent_fun
 
 end module
